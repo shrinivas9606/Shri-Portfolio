@@ -1,0 +1,112 @@
+# Shrinivas Narhare
+
+I’m an Aspiring frontend engineer with a strong grasp of JavaScript and Django. Detail-oriented and quick learner, committed to developing scalable frontend solutions. Possesses solid problem-solving skills and a passion for staying updated on industry trends. Eager to contribute to a dynamic team and grow as a backend professional.
+
+Currently pursuing Bachelor in Computer Science Engineering Third Year, excited to learn more. Outside of work I enjoy 3d design, swimming, reading.  
+
+<div className="socials">
+    <a href="www.linkedin.com/in/shrinivas-narhare"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/shrinivas9606"><i class="fa-brands fa-github"></i></a>
+    <a href="https://instagram.com/shri_._reddy"><i class="fa-brands fa-instagram"></i></a>
+    <a href="mailto:narhareshrinivas170@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
+    <a href="tel:+919356830853"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+## Experience
+
+**Technical Lead**  
+*AR-VR Club | GH Raisoni College of Engineering*  
+*August 2023 - Present*
+
+- Learned the concepts of Augumented Reality, Virtual Reality & Mixed Reality and learned how to use Unity software.
+  
+- Arraneged some events under the AR-VR Club.
+  
+- Developed and implemented a 3D Game using Unity Software
+
+## Projects
+
+<ProjectCard name="FYMaterials" description="FYMaterials is a comprehensive web application designed to cater to the academic needs of first-year students at GH Raisoni College of Engineering Pune." image="https://fymaterials.live/tymaterials.live.png" github="https://github.com/GautamPatil1/FYMaterials" url="https://fymaterials.live" stack={["Django", "Mkdocs Material", "React", "Docker"]} />
+
+<ProjectCard name="Grocery Store" description="Fully Responsive Landing Page of Grocery Store Using Scratch." image="https://github.com/shrinivas9606/Fully-Rsponsive-Landing-Page-of-Grocery-Store-Using-Scratch/blob/main/grocery%20store.png" github="https://github.com/shrinivas9606/Fully-Rsponsive-Landing-Page-of-Grocery-Store-Using-Scratch" url="https://shrinivas9606.github.io/Fully-Rsponsive-Landing-Page-of-Grocery-Store-Using-Scratch/" stack={["HTML", "CSS", "JavaScript"]} />
+
+### Skills
+
+| Category  | Technologies/Tools                        |
+|-----------|-------------------------------------------|
+| Code      | Django , Flask , Python , C , C++ , JavaScript, HTML , CSS |
+| Tools     | MongoDB , Git , GitHub Actions , SQL , MySQL , Unity |
+| Soft      | Communication , Teamwork , Problem-solving , Time Management |
+
+
+### Certifications
+
+- **MongoDB**
+  - [MongoDB Python Developer Path](https://learn.mongodb.com/c/RanF5WpKT4aHIZTI_lWzAw) - Mar 2024
+
+- **IBM**
+  - [Journey to Cloud: Envisioning Your Solution](https://www.credly.com/badges/eae26452-e1a4-4868-968e-a904d10d7fc7/public_url) - Mar 2024
+
+- **IBM**
+  - [Getting Started with Enterprise Data Science](https://www.credly.com/badges/87a1691e-1e65-4085-9871-74a976730695/public_url) - Mar 2024
+
+- **Oracle MyLearn University**
+  - [Oracle Cloud Infrastructure 2023 Certified Foundations Associate](https://catalog-education.oracle.com/pls/certview/sharebadge?id=C3670F054C9CA7CF48E34E39370C817CFA87F2E9F1B8A5D05CCB31D8F0C89604) - July 2023
+
+- **ARK Infosolutions Pvt Ltd**
+  - [5 days training on Unity 3D & AR-VR Fundamentals](https://drive.google.com/file/d/1Dhgz46kQBURJ-QfXCpuCQVluwbjbcXOS/view?usp=drive_link) - Mar 2023
+
+- **HackerRank**
+  - [Python (Basic)](https://www.hackerrank.com/certificates/44699431d63f) - Aug 2022
+
+
+### Education
+
+**Bachelor of Technology in Computer Science**
+  - **Institution:** Pune University
+  - **CGPA:** 8.77
+  - **Honors:** Data Science
+
+**HSC (12th Standard)**
+  - **Board:** SSC
+  - **School:** Rajarshri Shahu Jr Science College
+  - **Percentage:** 95%
+
+
+import { useState } from 'react'
+import Link from 'next/link'
+
+
+export function ProjectCard(props) {
+  const renderStack = () => {
+    return props.stack?.map((tech, index) => (
+      <span key={index} className="stack-item">{tech}</span>
+    ));
+  };
+
+  return (
+    <div className="project-card">
+      <div className="photo">
+        <img className="image" src={props.image} alt={props.name} />
+      </div>
+      <div className="info">
+        <h3>
+            {props.name}
+            <a href={`https://github.com/shrinivas9606/${props.github}`} target="_blank" rel="noopener noreferrer" >
+            <i class="fa-brands fa-github"></i>
+            </a>
+          <a href={props.url} target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-link"></i>
+          </a>
+        </h3>
+        <p>{props.description}</p>
+        <div className="links">
+            
+        </div>
+        {renderStack()}
+      </div>
+    </div>
+  );
+}
+
+

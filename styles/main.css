@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Inter var';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(/fonts/Inter-roman.latin.var.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Inter var';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(/fonts/Inter-italic.latin.var.woff2) format('woff2');
+  font-named-instance: 'Italic';
+}
+
+body {
+  font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* font-feature-settings: 'case' 1, 'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02', */
+    /* 'cv03' 1, 'cv04' 1; */
+  /* font-variation-settings: 'wght' 450;
+  font-variant: common-ligatures contextual;
+  letter-spacing: -0.02em; */
+}
+
+.nx-prose{
+  max-width: 60rem !important;
+}
+
+img.next-image {
+  margin: 0;
+}
+
+.prose a {
+  color: #0074de;
+}
+
+.nav-line .nav-link {
+  color: #69778c;
+}
+
+.fa-brands{
+  font-size: 1.5rem;
+}
+
+.fa-solid{
+  font-size: 1.5rem;
+}
+
+.certs a{
+  text-decoration: underline;
+}
+
+.project-card{
+  border: 1px solid rgb(195, 195, 195);
+  overflow: hidden;
+  padding: 0.25rem;
+  border-radius: .25rem;
+  background-color: transparent;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.image{
+  margin:0 !important;
+  border-radius: .25rem;
+  object-fit: cover;
+  height: 9rem;
+  width: 20rem;
+  border: .5px solid white
+}
+
+.photo{
+  padding: 0.5rem;
+  margin: 0 !important;
+  flex: 1;
+  background-color: transparent;
+}
+
+.info{
+  padding: 0.5rem;
+  flex: 2;
+  background-color: transparent;
+
+}
+
+.stack-item{
+  margin: .2rem;
+  background-color: rgb(190, 190, 190);
+  color: black;
+  border-radius: .25rem;
+  padding: .2rem;
+}
+
+.info p{
+  margin:0;
+}
+
+.info a{
+  margin-left: 1.5rem;
+  font-style: none;
+}
+
+.socials a{
+  margin-right: 2rem;
+}
+
+.info h3{
+  padding: 0;
+  margin: 0;
+}
+
+.project-name{
+  font-weight: 800 !important;
+}
+
+@media screen and (max-width: 768px){
+  .photo{
+    display: none;
+  }
+}
